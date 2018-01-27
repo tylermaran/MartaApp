@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marta Map</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+		
+		<!-- Begin first row -->
+		<div class="row" id="searchRow">
+            <form role="form">
+                <!-- Here we create the text box for capturing the search term-->
+                <!-- Here we capture the number of records that the user wants to retrieve  -->
+                <div class="form-group" id="searchTerm">
+                	<label for="pwd">Please choose a station (dropdown):</label>
+                    <select class="form-control" id="num-records-select">
+                        <option value="NONE" selected></option>
+                        <!-- Setting the option default -->
+                        <option value="AIRPORT STATION">AIRPORT STATION</option>
+                        <option value="ARTS CENTER STATION">ARTS CENTER STATION</option>
+                        <option value="ASHBY STATION">ASHBY STATION</option>
+                        <option value="AVONDALE STATION">AVONDALE STATION</option>
+                        <option value="BANKHEAD STATION">BANKHEAD STATION</option>
+                        <option value="BROOKHAVEN STATION">BROOKHAVEN STATION</option>
+                        <option value="BUCKHEAD STATION">BUCKHEAD STATION</option>
+                        <option value="CHAMBLEE STATION">CHAMBLEE STATION</option>
+                        <option value="CIVIC CENTER STATION">CIVIC CENTER STATION</option>
+                        <option value="COLLEGE PARK STATION">COLLEGE PARK STATION</option>
+                        <option value="DECATUR STATION">DECATUR STATION</option>
+                        <option value="DORAVILLE STATION">DORAVILLE STATION</option>
+                        <option value="DUNWOODY STATION">DUNWOODY STATION</option>
+                        <option value="EAST LAKE STATION">EAST LAKE STATION</option>
+                        <option value="EAST POINT STATION">EAST POINT STATION</option>
+                        <option value="EDGEWOOD CANDLER PARK STATION">EDGEWOOD CANDLER PARK STATION</option>
+                        <option value="FIVE POINTS STATION">FIVE POINTS STATION</option>
+                        <option value="GARNETT STATION">GARNETT STATION</option>
+                        <option value="GEORGIA STATE STATION">GEORGIA STATE STATION</option>
+                        <option value="HAMILTON E HOLMES STATION">HAMILTON E HOLMES STATION</option>
+                        <option value="INDIAN CREEK STATION">INDIAN CREEK STATION</option>
+                        <option value="INMAN PARK STATION">INMAN PARK STATION</option>
+                        <option value="KENSINGTON STATION">KENSINGTON STATION</option>
+                        <option value="KING MEMORIAL STATION">KING MEMORIAL STATION</option>
+                        <option value="LAKEWOOD STATION">LAKEWOOD STATION</option>
+                        <option value="LENOX STATION">LENOX STATION</option>
+                        <option value="LINDBERGH STATION">LINDBERGH STATION</option>
+                        <option value="MEDICAL CENTER STATION">MEDICAL CENTER STATION</option>
+                        <option value="MIDTOWN STATION">MIDTOWN STATION</option>
+                        <option value="NORTH AVE STATION">NORTH AVE STATION</option>
+                        <option value="NORTH SPRINGS STATION">NORTH SPRINGS STATION</option>
+                        <option value="OAKLAND CITY STATION">OAKLAND CITY STATION</option>
+                        <option value="OMNI DOME STATION">OMNI DOME STATION</option>
+                        <option value="PEACHTREE CENTER STATION">PEACHTREE CENTER STATION</option>
+                        <option value="SANDY SPRINGS STATION">SANDY SPRINGS STATION</option>
+                        <option value="VINE CITY STATION">VINE CITY STATION</option>
+                        <option value="WEST END STATION">WEST END STATION</option>
+                        <option value="WEST LAKE STATION">WEST LAKE STATION</option>
+                    </select>
+                </div>
+                <!-- Here we have our final submit button -->
+                <button type="submit" class="btn btn-default" id="run-search"><i class="fa fa-search"></i> Search</button>
+                <button type="button" class="btn btn-default" id="clear-all"><i class="fa fa-trash"></i> Clear Results</button>
+            </form>
+            <br>
+            <h3 id="station-id"></h3>
+            <table class="table">
+  			<thead>
+			    <tr>
+			      <th scope="col">Train Number</th>
+			      <th scope="col">Line Color</th>
+			      <th scope="col">Train Direction</th>
+			      <th scope="col">Arrival Time</th>
+			      <th scope="col">Final Station</th>
+			    </tr>
+  			</thead>
+  			<!-- Add marta data to the table body below -->
+			<tbody id="searchList"></tbody>
+		</table>
+		</div>		
+		<!-- End first row -->
+
+		<!-- Begin Second Row -->
+		<div class="row" id="scheduleRow">
+			
+		<h2>Marta Schedule (all trains)</h2>
+
+		<table class="table">
+  			<thead>
+			    <tr>
+			      <th scope="col">#</th>
+			      <th scope="col">Train Number</th>
+			      <th scope="col">Train Direction</th>
+			      <th scope="col">Next Station</th>
+			      <th scope="col">Arrival Time</th>
+			      <th scope="col">Final Station</th>
+			    </tr>
+  			</thead>
+  			<!-- Add marta data to the table body below -->
+			<tbody id="targetbody"></tbody>
+		</table>
+		<div class="testing"></div>
+		</div>
+		<!-- End of second row -->
+		
+
+		</div>
+
+	</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

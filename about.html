@@ -1,0 +1,234 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo">PumpkinSquirrelJuice</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Clickable Train Map</a></li>
+                <li><a href="all-trains.html">All Trains</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                                <img src="assets/images/2.png">
+                            </div>
+                            <a href="#!user"><img class="circle" src="assets/images/marta.jpg"></a>
+                            <!-- a few placeholder links for possible later use -->
+                            <a href="#!name"><span class="black-text name"></span></a>
+                            <a href="#!email"><span class="black-text email"></span></a>
+                            <a href="#!name"><span class="black-text name"></span></a>
+                            <a href="#!email"><span class="black-text email"></span></a>
+                            <a href="#!name"><span class="black-text name"></span></a>
+                            <a href="#!email"><span class="black-text email"></span></a>
+                        </div>
+                    </li>
+                    <li><a class="waves-effect" href="index.html"><i class="material-icons">map</i>Clickable Train Map</a></li>
+                    <li><a class="waves-effect" href="all-trains.html"><i class="material-icons">train</i>All Trains</a></li>
+                    <li><a class="waves-effect" href="about.html"><i class="material-icons">group</i>About</a></li>
+                    <li><a class="waves-effect" href="contact.html"><i class="material-icons">group</i>Contact Us</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+        </div>
+    </nav>
+    <!-- Begin Section with first Picture -->
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br>
+                <br>
+                <h1 class="header center amber-text text-accent-3">MARTA TRAINS LIVE</h1>
+                <div class="row center">
+                    <h5 class="header col s12 light">New app allows user to get info on nearest trains and all trains</h5>
+                </div>
+                <div class="row center">
+                    <a href="https://github.com/limbert08/Proj1_PumpkinSquirrelJuice" target="_blank" id="download-button" class="btn-large waves-effect waves-light amber accent-3">GitHub Page</a>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="parallax"><img src="assets/images/train-tunnel.jpg" alt="Unsplashed background img 1"></div>
+    </div>
+    <!-- Begin Section with first white content area -->
+    <div class="container">
+        <div class="section">
+            <!--   Icon Section   -->
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">lightbulb_outline</i></h2> <!-- flash_on -->
+                        <h5 class="center">Application Concept</h5>
+                        <p class="light">We wanted to provide a map based UI for commuters that want to see where the nearest train to their station might be. There doesn't seem to be any page or app that provides anything other than text. The MARTA API returns all trains, all lines, all stations. We filter that data for the user's station of interest and present it on a map so the user can easily see when trains might arrive.</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                        <h5 class="center">The Team</h5>
+                        <p class="light">
+                            <ul class="center light">
+                                <li>Daryl Bilderback</li>
+                                <li>Limbert Bontigao</li>
+                                <li>Gene Cannella</li>
+                                <li>Thomas Gentle</li>
+                                <li>Nic Branker</li>
+                                <li>Tyler Maran</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">build</i></h2> <!-- settings -->
+                        <h5 class="center">Technologies</h5>
+                        <p class="light">
+                            <ul class="center light">
+                                <h6>APIs</h6>
+                                <li>developer.itsmarta.com</li>
+                                <li>api.openweathermap.org</li>
+                                <li>firebase.google.com</li>
+                            </ul>
+                            <ul class="center light">
+                                <h6>CSS Frameworks</h6>
+                                <li>Materialize: materializecss.com/</li>
+                                <li>Bootstrap: getbootstrap.com</li>
+                            </ul>
+                            <ul class="center light">
+                                <h6>Other Technologies</h6>
+                                <li>Amazon AWS Lambda</li>
+                                <li>Node.js</li>
+                                <li>CloudWatch Events</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Begin Section with Second Picture -->
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 light">We used the Materialize framework to get sideNavs and carousels. Here it lets us style the images on this page with a parallax effect.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="assets/images/marta_and_highway.jpg" alt="Unsplashed background img 2"></div>
+    </div>
+    <!-- Begin Section with second white content area -->
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 center">
+                    <!--<h3><i class="mdi-content-send brown-text"></i></h3>-->
+                    <h4>Presentation Carousel</h4>
+                    <br>
+                    <!--<p class="left-align light">Lorem ipsum dolor sit </p>-->
+                    <div class="carousel carousel-slider">
+
+                        <a class="carousel-item" href="#one!"><img src="assets/images/Slide1.JPG"></a>
+                        <a class="carousel-item" href="#two!"><img src="assets/images/Slide2.JPG"></a>
+                        <a class="carousel-item" href="#three!"><img src="assets/images/Slide3.JPG"></a>
+                        <a class="carousel-item" href="#four!"><img src="assets/images/Slide4.JPG"></a>
+                        <a class="carousel-item" href="#five!"><img src="assets/images/Slide5.JPG"></a>
+                        <a class="carousel-item" href="#five!"><img src="assets/images/Slide6.JPG"></a>
+                        <a class="carousel-item" href="#five!"><img src="assets/images/Slide7.JPG"></a>                        
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 light">Our app scales because users hit the firebase db rather than the Marta API.</h5>
+                    <h5 class="header col s12 light">Only one entity - the AWS Lambda Function - hits the API.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="assets/images/MARTA1.jpg" alt="Unsplashed background img 3"></div>
+    </div>
+    <footer class="page-footer amber accent-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Team PumpkinSquirrelJuice</h5>
+                    <ul class="white-text">
+                        <li>Daryl Bilderback</li>
+                        <li>Limbert Bontigao</li>
+                        <li>Gene Cannella</li>
+                        <li>Thomas Gentle</li>
+                        <li>Nic Branker</li>
+                        <li>Tyler Maran</li>
+                    </ul>
+                </div>
+                <div class="col l6 s12">
+                    <h5 class="white-text">Developer Resources</h5>
+                    <ul>
+                        <li><a class="white-text" href="http://www.itsmarta.com/app-developer-resources.aspx">MARTA</a></li>
+                        <li><a class="white-text" href="http://api.openweathermap.org">OpenWeatherMap</a></li>
+                        <li><a class="white-text" href="https://firebase.google.com/">Firebase</a></li>
+                        <li><a class="white-text" href="http://materializecss.com/">Materialize</a></li>
+                        <li><a class="white-text" href="https://docs.aws.amazon.com/lambda/latest/dg/API_Reference.html">Amazon AWS Lambda</a></li>
+                    </ul>
+                </div>
+                <!--
+                <div class="col l3 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="white-text" href="http://www.itsmarta.com/app-developer-resources.aspx">http://www.itsmarta.com/app-developer-resources.aspx</a></li>
+                        <li><a class="white-text" href="http://api.openweathermap.org">api.openweathermap.org</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+                -->
+
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                A Project From <a class="brown-text text-lighten-3" href="https://github.com/limbert08/Proj1_PumpkinSquirrelJuice">Team PumpkinSquirrelJuice</a>
+            </div>
+        </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="assets/js/materialize.js"></script>
+    <script src="assets/js/init.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        //$('.carousel').carousel();
+        $('.carousel.carousel-slider').carousel({fullWidth: true});
+        $(".button-collapse").sideNav({
+        menuWidth: 300, // Default is 300
+        edge: 'left', // Choose the horizontal origin // Default is left
+        closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        draggable: true, // Choose whether you can drag to open on touch screens,
+        });
+    });
+    </script>
+
+</body>
+
+</html>
